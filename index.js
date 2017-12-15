@@ -13,6 +13,11 @@ thumbnailsApi.config({
     getResolutions: true			// optional, default is false 
 })
 
+app.get('/', function (req, res) {
+    console.log("hello world");
+    res.send('hello world');
+}
+        
 app.get('/thumbnails', function (req, res) {
     console.log('url specified: ', req.query.url);
     var rx = /^.*(?:(?:youtu\.be\/|v\/|vi\/|u\/\w\/|embed\/)|(?:(?:watch)?\?v(?:i)?=|\&v(?:i)?=))([^#\&\?]*).*/;
