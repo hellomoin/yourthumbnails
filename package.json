@@ -8,6 +8,10 @@
     "express": "^4.16.2",
     "youtube-api-thumbnails": "^1.1.1"
   },
+  "engines": {
+    "node": "6.10.3",
+    "npm": "5.0.3"
+  },
   "devDependencies": {},
   "scripts": {
     "start": "node index.js",
