@@ -33,9 +33,10 @@ app.get('/thumbnails', function (req, res) {
 });
 
 var port = process.env.PORT | 9200;
+var server_host = process.env.YOUR_HOST || '0.0.0.0';
 
-console.log(port);
+console.log(server_host + ':' + port);
 
-app.listen(port, function(){
+app.listen(port, server_host, function(){
     console.log('thumbnail server started at port: ', port);
 });
